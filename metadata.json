@@ -1,0 +1,6 @@
+{
+  "name": "Pri Cardoso - Corrida & Maternidade",
+  "description": "Site Link na Bio editorial e moderno para a treinadora de corrida e maternidade Pri Cardoso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
