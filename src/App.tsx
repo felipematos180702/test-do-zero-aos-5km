@@ -1,3 +1,4 @@
+import { HeaderSection } from './components/HeaderSection';
 import { HeroSection } from './components/HeroSection';
 import { TargetAudienceSection } from './components/TargetAudienceSection';
 import { CardSection } from './components/CardSection';
@@ -11,6 +12,9 @@ import { MessageCircle } from 'lucide-react';
 export default function App() {
   return (
     <div className="min-h-screen bg-[#EFECE6] text-[#22281D] font-sans-body flex flex-col justify-between selection:bg-[#414A36] selection:text-[#EFECE6]">
+      {/* Header */}
+      <HeaderSection />
+
       {/* Main Container */}
       <main className="w-full flex-1">
         {/* 1. Hero Section (VSL) */}
@@ -37,7 +41,7 @@ export default function App() {
 
       {/* Floating Quick WhatsApp Button for Mobile */}
       <a
-        href={`https://wa.me/${HERO_DATA.whatsappNumber}?text=${encodeURIComponent("Olá Pri! Vim pelo seu site e gostaria de conversar sobre o programa Do Zero aos 5km.")}`}
+        href={`https://wa.me/${HERO_DATA.whatsappNumber}?text=${encodeURIComponent("Olá Pri! Vim pelo seu site e gostaria de conversar sobre o programa Do zero aos cinco km.")}`}
         target="_blank"
         rel="noopener noreferrer"
         title="Falar com Pri Cardoso no WhatsApp"

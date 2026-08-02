@@ -54,7 +54,7 @@ export function FaqSection() {
 
               {/* Accordion Content */}
               {isOpen && (
-                <div className="px-3.5 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-[#686E5E] leading-relaxed border-t border-[#F5F2EC] pt-2.5 font-sans-body animate-fadeIn">
+                <div className="px-3.5 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-[#686E5E] leading-relaxed border-t border-[#F5F2EC] pt-2.5 font-sans-body animate-fadeIn text-justify">
                   {faq.answer}
                 </div>
               )}

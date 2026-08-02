@@ -19,6 +19,11 @@ export function AboutSection() {
               src={ABOUT_DATA.image} 
               alt="Pri Cardoso" 
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                if (e.currentTarget.src !== HERO_DATA.fallbackPhotoUrl) {
+                  e.currentTarget.src = HERO_DATA.fallbackPhotoUrl;
+                }
+              }}
               className="w-full h-full object-cover"
             />
             {/* Subtle bottom gradient overlay */}
@@ -40,7 +45,7 @@ export function AboutSection() {
           </h2>
 
           {/* Paragraphs */}
-          <div className="space-y-4 font-sans-body text-sm sm:text-base text-[#DCD6CA] leading-relaxed mb-8">
+          <div className="space-y-4 font-sans-body text-sm sm:text-base text-[#DCD6CA] leading-relaxed mb-8 text-justify">
             {ABOUT_DATA.paragraphs.map((p, idx) => (
               <p key={idx} className="tracking-wide">
                 {p}
@@ -54,7 +59,7 @@ export function AboutSection() {
               <Users className="w-5 h-5 text-[#D5CFB2] shrink-0" />
               <div>
                 <p className="text-xs font-bold text-white uppercase tracking-wider">Comunidade</p>
-                <p className="text-[11px] text-[#C2BCB0]">Mulheres & Mães</p>
+                <p className="text-[11px] text-[#C2BCB0]">Mulheres</p>
               </div>
             </div>
             
@@ -62,15 +67,7 @@ export function AboutSection() {
               <Award className="w-5 h-5 text-[#D5CFB2] shrink-0" />
               <div>
                 <p className="text-xs font-bold text-white uppercase tracking-wider">Metodologia</p>
-                <p className="text-[11px] text-[#C2BCB0]">Do Zero aos 5k</p>
-              </div>
-            </div>
-
-            <div className="bg-[#353C2C]/80 backdrop-blur-xs p-3.5 rounded-xl border border-[#525B46] flex items-center gap-3 sm:col-span-2">
-              <CheckCircle2 className="w-5 h-5 text-[#D5CFB2] shrink-0" />
-              <div>
-                <p className="text-xs font-bold text-white uppercase tracking-wider">Acompanhamento</p>
-                <p className="text-[11px] text-[#C2BCB0]">100% Individualizado (Planos com Assessoria)</p>
+                <p className="text-[11px] text-[#C2BCB0]">Do zero aos cinco km</p>
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
 
             <div>
               {/* Thumbnail Image */}
-              <div className="relative w-full aspect-[21/9] sm:aspect-[16/9] mb-4 sm:mb-6 rounded-lg sm:rounded-2xl overflow-hidden shrink-0 bg-[#EFECE6] border border-[#E5DFD4]">
+              <div className="relative w-full aspect-[3/2] sm:aspect-[16/9] mb-4 sm:mb-6 rounded-lg sm:rounded-2xl overflow-hidden shrink-0 bg-[#EFECE6] border border-[#E5DFD4]">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -51,8 +51,8 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                       e.currentTarget.src = card.fallbackImage;
                     }
                   }}
-                  style={{ objectPosition: card.imagePosition || 'center top' }}
-                  className="w-full h-full object-cover"
+                  style={card.imagePosition ? { objectPosition: card.imagePosition } : undefined}
+                  className="w-full h-full object-cover object-[center_12%] sm:object-center scale-110 sm:scale-100 origin-top transition-transform duration-300"
                 />
               </div>
 
@@ -68,7 +68,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                 {card.title}
               </h3>
               
-              <p className="font-sans-body text-xs sm:text-base text-[#686E5E] leading-relaxed mb-4 sm:mb-6 font-medium">
+              <p className="font-sans-body text-xs sm:text-base text-[#686E5E] leading-relaxed mb-4 sm:mb-6 font-medium text-justify">
                 {card.description}
               </p>
 
@@ -78,7 +78,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                 {card.howItWorks && (
                   <div>
                     <h4 className="font-semibold text-[#22281D] uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">Como Funciona:</h4>
-                    <ul className="space-y-1.5 sm:space-y-2">
+                    <ul className="space-y-1.5 sm:space-y-2 text-justify">
                       {card.howItWorks.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#4A4E43] leading-snug">
                           <Sparkles className="w-3.5 h-3.5 text-[#79856A] shrink-0 mt-0.5" />

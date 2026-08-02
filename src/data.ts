@@ -9,8 +9,9 @@ export const HERO_DATA = {
   name: "Pri Cardoso",
   title: "Corrida & Maternidade",
   subtitle: "Assessoria Online do Zero aos Kms Desejados",
-  welcomePhrase: "Um time exclusivo de corrida para mulheres e mães.",
-  googleDrivePhotoUrl: "https://lh3.googleusercontent.com/d/1jowrC2rLSLNXGaG5CMDxLU7EMGSlX1gO",
+  welcomePhrase: "Um time exclusivo de corrida para mulheres.",
+  logoUrl: "https://lh3.googleusercontent.com/d/1Y_8KoojtD1CwPbA1Alk5_Fayk_qiZiqE",
+  googleDrivePhotoUrl: "https://lh3.googleusercontent.com/d/19xvGZtcFwSmK8pPvojo-N_bdoCWLaJu5",
   fallbackPhotoUrl: priPortraitLocal,
   instagramHandle: "@timepricardoso",
   instagramUrl: "https://instagram.com/timepricardoso",
@@ -20,13 +21,13 @@ export const HERO_DATA = {
 export const LINK_CARDS: LinkCard[] = [
   {
     id: "programa-5k",
-    title: "Do Zero aos 5km (Com Assessoria)",
-    description: "Acompanhamento completo e personalizado com orientações individuais para você conquistar seus primeiros 5km com segurança.",
+    title: "Do zero aos cinco km (Com Assessoria)",
+    description: "Acompanhamento completo com orientações individuais para você conquistar seus primeiros 5km com segurança.",
     badge: "Vagas Limitadas",
     ctaText: "Garantir Minha Vaga",
-    image: "https://lh3.googleusercontent.com/d/1fkwJK1QW0t3WK6eKM2dsLUeF2UtELzf-",
+    image: "https://lh3.googleusercontent.com/d/1QhFyRD0HnzTnKeF-HzIJtCjZBHbBy4HT",
     fallbackImage: cardProgram5kImg,
-    whatsappMessage: "Olá Pri! Gostaria de consultar a disponibilidade de vagas para a Assessoria do Zero aos 5km de 10 Semanas.",
+    whatsappMessage: "Olá Pri! Gostaria de consultar a disponibilidade de vagas para a Assessoria Do zero aos cinco km de 10 Semanas.",
     tag: "Acompanhamento Individual",
     checkoutUrl: "https://pay.kiwify.com.br/1eDGuMf",
     targetAudience: [
@@ -34,23 +35,24 @@ export const LINK_CARDS: LinkCard[] = [
       "Mulheres que já correm e querem melhorar o desempenho.",
       "Quem deseja incluir exercícios físicos regularmente na rotina.",
       "Quem deseja emagrecer usando a corrida como estratégia.",
-      "Mães e mulheres comuns com rotinas intensas de múltiplas funções."
+      "Mulheres com rotinas intensas de múltiplas funções."
     ],
     howItWorks: [
       "Conteúdo em plataforma digital segura.",
       "Grupo fechado e exclusivo no WhatsApp formado somente por mulheres.",
-      "Acompanhamento, trocas, motivação e dúvidas tiradas diretamente com a Pri Cardoso."
+      "10 semanas de assessoria com acompanhamento, trocas, motivação e dúvidas tiradas diretamente com a Pri Cardoso.",
+      "Treinos gravados de fortalecimento para fazer em casa, sem necessidade de academia ou de material específico."
     ],
     purpose: "Resgatar a saúde e a autoestima de mulheres de forma gentil, facilitada e sem que elas precisem treinar sozinhas."
   },
   {
     id: "planejamento",
-    title: "Do Zero aos 5km (Sem Assessoria)",
+    title: "Do zero aos cinco km (Sem Assessoria)",
     description: "Planilha e estrutura detalhada de treinos para quem deseja evoluir e treinar no seu próprio ritmo e horários.",
     ctaText: "Garantir Planilha",
-    image: "https://lh3.googleusercontent.com/d/1tp23c4VFFCmnlOmW0ut8ChIRGtdkH9OZ",
+    image: "https://lh3.googleusercontent.com/d/1muCTQGNPNIhor73OdG68-Rlxnk6C6KqV",
     fallbackImage: cardPlanImg,
-    whatsappMessage: "Olá Pri! Gostaria de mais detalhes sobre o Planejamento Autônomo da planilha do Zero aos 5km.",
+    whatsappMessage: "Olá Pri! Gostaria de mais detalhes sobre o Planejamento Autônomo da planilha Do zero aos cinco km.",
     tag: "Treino Autônomo",
     checkoutUrl: "https://pay.kiwify.com.br/fRNaqyo",
     targetAudience: [
@@ -58,11 +60,11 @@ export const LINK_CARDS: LinkCard[] = [
       "Mulheres que já correm e querem melhorar o desempenho.",
       "Quem deseja incluir exercícios físicos regularmente na rotina.",
       "Quem deseja emagrecer usando a corrida como estratégia.",
-      "Mães e mulheres comuns com rotinas intensas de múltiplas funções."
+      "Mulheres com rotinas intensas de múltiplas funções."
     ],
     howItWorks: [
       "Conteúdo em plataforma digital segura.",
-      "Grupo fechado e exclusivo no WhatsApp formado somente por mulheres."
+      "Treinos gravados de fortalecimento para fazer em casa, sem necessidade de academia ou de material específico."
     ],
     purpose: "Resgatar a saúde e a autoestima de mulheres de forma gentil, facilitada."
   }
@@ -70,7 +72,7 @@ export const LINK_CARDS: LinkCard[] = [
 
 export const ABOUT_DATA = {
   title: "Sobre Mim & O Time",
-  image: "https://lh3.googleusercontent.com/d/1k2OBw9R4FAoW8-7yed1DAM0ZtIsauhyX",
+  image: "https://lh3.googleusercontent.com/d/19xvGZtcFwSmK8pPvojo-N_bdoCWLaJu5",
   paragraphs: [
     "Acredito que a corrida é um poderoso portal de reconexão. Quando nos tornamos mães, é comum nos desorganizarmos na rotina e colocarmos nossos desejos em segundo plano.",
     "O Time Pri Cardoso nasceu para resgatar a sua força, disposição e autoestima através de uma corrida consciente, acolhedora e eficiente. Aqui respeitamos o seu ritmo real e celebramos cada pequeno quilômetro percorrido."
@@ -88,7 +90,7 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: "faq-1",
     question: "Nunca corri na vida, o programa serve para mim?",
-    answer: "Com certeza! O programa 'Do Zero aos 5km' foi desenhado especificamente para mulheres que nunca correram ou que estão há anos sem praticar atividades físicas. Nosso método intercala caminhada e corrida leve progressiva, garantindo adaptação segura para suas articulações e seu fôlego."
+    answer: "Com certeza! O programa 'Do zero aos cinco km' foi desenhado especificamente para mulheres que nunca correram ou que estão há anos sem praticar atividades físicas. Nosso método intercala caminhada e corrida leve progressiva, garantindo adaptação segura para suas articulações e seu fôlego."
   },
   {
     id: "faq-2",

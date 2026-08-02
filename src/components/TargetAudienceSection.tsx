@@ -20,8 +20,8 @@ export function TargetAudienceSection() {
           <h2 className="font-serif-editorial text-xl sm:text-4xl font-bold text-[#22281D] italic mb-2 sm:mb-3">
             Para quem é o programa?
           </h2>
-          <p className="font-sans-body text-xs sm:text-base text-[#686E5E] max-w-xl mx-auto">
-            O método <span className="font-semibold text-[#22281D]">Do Zero aos 5km</span> foi desenhado para você que busca transformação e saúde com acolhimento.
+          <p className="font-sans-body text-xs sm:text-base text-[#686E5E] max-w-xl mx-auto text-justify">
+            O método <span className="font-semibold text-[#22281D]">Do zero aos cinco km</span> foi desenhado para você que busca transformação e saúde com acolhimento.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function TargetAudienceSection() {
             <h3 className="font-semibold text-[10px] sm:text-xs uppercase tracking-wider text-[#D5CFB2] mb-0.5 sm:mb-1">
               Nosso Propósito
             </h3>
-            <p className="text-xs sm:text-base text-[#EFECE6]/90 leading-relaxed italic">
+            <p className="text-xs sm:text-base text-[#EFECE6]/90 leading-relaxed italic text-justify">
               "Resgatar a saúde e a autoestima de mulheres de forma gentil, facilitada e sem que elas precisem treinar sozinhas."
             </p>
           </div>
