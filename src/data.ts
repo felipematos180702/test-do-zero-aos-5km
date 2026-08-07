@@ -15,7 +15,7 @@ export const HERO_DATA = {
   fallbackPhotoUrl: priPortraitLocal,
   instagramHandle: "@timepricardoso",
   instagramUrl: "https://instagram.com/timepricardoso",
-  whatsappNumber: "5511999999999", // Editable default number
+  whatsappNumber: "5521969952261", // Editable default number
 };
 
 export const LINK_CARDS: LinkCard[] = [
@@ -74,8 +74,10 @@ export const ABOUT_DATA = {
   title: "Sobre Mim & O Time",
   image: "https://lh3.googleusercontent.com/d/19xvGZtcFwSmK8pPvojo-N_bdoCWLaJu5",
   paragraphs: [
-    "Acredito que a corrida é um poderoso portal de reconexão. Quando nos tornamos mães, é comum nos desorganizarmos na rotina e colocarmos nossos desejos em segundo plano.",
-    "O Time Pri Cardoso nasceu para resgatar a sua força, disposição e autoestima através de uma corrida consciente, acolhedora e eficiente. Aqui respeitamos o seu ritmo real e celebramos cada pequeno quilômetro percorrido."
+    "Acredito que a corrida é um poderoso portal de reconexão.",
+    "Quando nos tornamos mães, é comum a rotina se desorganizar e os nossos desejos ficarem em segundo plano. A gente se perde um pouco de si mesma.",
+    "O Time Pri Cardoso nasceu para resgatar a sua força, a sua disposição e a sua autoestima por meio de uma corrida consciente, eficiente e acolhedora.",
+    "Aqui a gente respeita o seu ritmo real, de vida, sem cobranças impossíveis, e celebra cada quilômetro percorrido. Porque voltar para você também é um ato de coragem."
   ],
   whatsappCTA: "Fale Diretamente Comigo no WhatsApp",
   whatsappMessage: "Olá Pri! Conheci seu trabalho pelo site e gostaria de conversar sobre os treinos de corrida."
