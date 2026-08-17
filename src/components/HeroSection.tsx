@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { Play, Pause } from 'lucide-react';
 import { HERO_DATA } from '../data';
+import { motion, AnimatePresence } from 'motion/react';
 
-export function HeroSection() {
+interface HeroSectionProps {
+  isScrolled: boolean;
+}
+
+export function HeroSection({ isScrolled }: HeroSectionProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -74,17 +79,35 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative w-full pt-6 pb-12 md:pt-10 md:pb-16 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden">
+    <section className="relative w-full pt-6 pb-12 md:pt-10 md:pb-16 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden min-h-[90vh]">
       {/* Subtle organic background accent glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#DED6CA]/50 rounded-full blur-3xl -z-10 pointer-events-none" />
 
+      {/* Hero Centered Logo */}
+      <div className="w-full flex items-center justify-center h-32 sm:h-48 md:h-56 mb-4 sm:mb-8 relative z-20">
+        <AnimatePresence>
+          {!isScrolled && (
+            <motion.img
+              layoutId="hero-logo"
+              src={HERO_DATA.logoUrl}
+              alt={`Logo ${HERO_DATA.name}`}
+              className="h-full w-auto object-contain drop-shadow-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: "spring", stiffness: 200, damping: 25 }}
+            />
+          )}
+        </AnimatePresence>
+      </div>
+
       {/* Styled Title */}
-      <h1 className="font-serif-editorial text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#22281D] mb-4 italic max-w-4xl leading-tight text-justify">
+      <h1 className="font-serif-editorial text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#22281D] mb-4 italic max-w-4xl leading-tight text-justify relative z-10">
         Descubra como sair <span className="underline decoration-[#79856A] decoration-[3px] underline-offset-4 not-italic font-bold">do zero</span> e conquistar seus <span className="underline decoration-[#79856A] decoration-[3px] underline-offset-4 not-italic font-bold">primeiros cinco km</span> com segurança
       </h1>
 
       {/* Subtitle */}
-      <p className="font-sans-body text-sm sm:text-lg text-[#22281D]/80 max-w-2xl mb-8 sm:mb-10 leading-relaxed text-justify">
+      <p className="font-sans-body text-sm sm:text-lg text-[#22281D]/80 max-w-2xl mb-8 sm:mb-10 leading-relaxed text-justify relative z-10">
         Um programa exclusivo de corrida criado para mulheres que desejam resgatar a força, disposição e autoestima através de uma rotina de treinos eficiente.
       </p>
 

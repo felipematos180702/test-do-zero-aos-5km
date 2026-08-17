@@ -8,17 +8,26 @@ import { FaqSection } from './components/FaqSection';
 import { FooterSection } from './components/FooterSection';
 import { HERO_DATA } from './data';
 import { MessageCircle } from 'lucide-react';
+import { useState } from 'react';
+import { useScroll, useMotionValueEvent } from 'motion/react';
 
 export default function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 50);
+  });
+
   return (
     <div className="min-h-screen bg-[#FDF5E6] text-[#22281D] font-sans-body flex flex-col justify-between selection:bg-[#414A36] selection:text-[#FDF5E6]">
       {/* Header */}
-      <HeaderSection />
+      <HeaderSection isScrolled={isScrolled} />
 
       {/* Main Container */}
       <main className="w-full flex-1">
         {/* 1. Hero Section (VSL) */}
-        <HeroSection />
+        <HeroSection isScrolled={isScrolled} />
 
         {/* 2. Target Audience (Para quem é) Section - Below VSL */}
         <TargetAudienceSection />
