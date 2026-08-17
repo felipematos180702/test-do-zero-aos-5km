@@ -5,7 +5,7 @@ export function AboutSection() {
   const whatsappUrl = `https://wa.me/${HERO_DATA.whatsappNumber}?text=${encodeURIComponent(ABOUT_DATA.whatsappMessage)}`;
 
   return (
-    <section className="w-full bg-[#414A36] text-[#EFECE6] py-16 sm:py-20 px-4 sm:px-6 my-10 relative overflow-hidden">
+    <section className="w-full bg-[#414A36] text-[#FDF5E6] py-16 sm:py-20 px-4 sm:px-6 my-10 relative overflow-hidden">
       {/* Background organic design accents */}
       <div className="absolute -top-12 -right-12 w-64 h-64 bg-[#545E48] rounded-full blur-2xl opacity-40 pointer-events-none" />
       <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-[#2C3324] rounded-full blur-2xl opacity-50 pointer-events-none" />
@@ -34,7 +34,7 @@ export function AboutSection() {
         {/* Content Column */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           {/* Section Badge */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#545E48]/80 text-[#EFECE6] text-[11px] sm:text-xs font-semibold uppercase tracking-widest px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full mb-4 sm:mb-6 border border-[#636E56]/60">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#545E48]/80 text-[#FDF5E6] text-[11px] sm:text-xs font-semibold uppercase tracking-widest px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full mb-4 sm:mb-6 border border-[#636E56]/60">
             <Heart className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#D8D2C5]" />
             <span>Comunidade & Propósito</span>
           </div>

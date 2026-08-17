@@ -41,7 +41,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
 
             <div>
               {/* Thumbnail Image */}
-              <div className="relative w-full aspect-[3/2] sm:aspect-[16/9] mb-4 sm:mb-6 rounded-lg sm:rounded-2xl overflow-hidden shrink-0 bg-[#EFECE6] border border-[#E5DFD4]">
+              <div className="relative w-full aspect-[3/2] sm:aspect-[16/9] mb-4 sm:mb-6 rounded-lg sm:rounded-2xl overflow-hidden shrink-0 bg-[#FDF5E6] border border-[#E5DFD4]">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -68,7 +68,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                 {card.title}
               </h3>
               
-              <p className="font-sans-body text-xs sm:text-base text-[#686E5E] leading-relaxed mb-4 sm:mb-6 font-medium text-justify">
+              <p className="font-sans-body text-xs sm:text-base text-[#686E5E] leading-relaxed mb-4 sm:mb-6 font-medium text-justify whitespace-pre-wrap">
                 {card.description}
               </p>
 
@@ -77,7 +77,9 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                 {/* Como Funciona */}
                 {card.howItWorks && (
                   <div>
-                    <h4 className="font-semibold text-[#22281D] uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">Como Funciona:</h4>
+                    <h4 className="font-semibold text-[#22281D] uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                      {card.id === 'programa-5k' ? 'Com a Assessoria, você terá:' : 'Como Funciona:'}
+                    </h4>
                     <ul className="space-y-1.5 sm:space-y-2 text-justify">
                       {card.howItWorks.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#4A4E43] leading-snug">
@@ -88,6 +90,11 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
                     </ul>
                   </div>
                 )}
+                {card.purpose && (
+                  <p className="text-xs sm:text-sm text-[#414A36] font-semibold italic mt-4 pt-3 border-t border-[#FDF5E6] text-justify">
+                    {card.purpose}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -96,7 +103,7 @@ export function CardSection({ onSelectCard }: CardSectionProps) {
               {/* CTA Button */}
               <button
                 onClick={(e) => handleCheckout(card, e)}
-                className="inline-flex items-center gap-2 bg-[#414A36] hover:bg-[#343B2B] text-[#EFECE6] px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider transition-colors shadow-sm w-full justify-center"
+                className="inline-flex items-center gap-2 bg-[#414A36] hover:bg-[#343B2B] text-[#FDF5E6] px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider transition-colors shadow-sm w-full justify-center"
               >
                 <ShoppingCart className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span>{card.ctaText}</span>

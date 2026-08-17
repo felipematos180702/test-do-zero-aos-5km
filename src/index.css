@@ -3,7 +3,7 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #EFECE6;
+    background-color: #FDF5E6;
     color: #22281D;
   }
 }
@@ -16,7 +16,7 @@
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Custom mask gradients for hero photo blending seamlessly into #EFECE6 */
+/* Custom mask gradients for hero photo blending seamlessly into #FDF5E6 */
 .mask-hero-gradient {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 98%);
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 98%);

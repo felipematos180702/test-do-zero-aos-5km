@@ -11,7 +11,7 @@ import { MessageCircle } from 'lucide-react';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#EFECE6] text-[#22281D] font-sans-body flex flex-col justify-between selection:bg-[#414A36] selection:text-[#EFECE6]">
+    <div className="min-h-screen bg-[#FDF5E6] text-[#22281D] font-sans-body flex flex-col justify-between selection:bg-[#414A36] selection:text-[#FDF5E6]">
       {/* Header */}
       <HeaderSection />
 
@@ -46,7 +46,7 @@ export default function App() {
         rel="noopener noreferrer"
         title="Falar com Pri Cardoso no WhatsApp"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-5 right-5 z-40 bg-[#414A36] text-[#EFECE6] p-3.5 sm:p-4 rounded-full shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center border border-[#FFFFFF]/30 group"
+        className="fixed bottom-5 right-5 z-40 bg-[#414A36] text-[#FDF5E6] p-3.5 sm:p-4 rounded-full shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center border border-[#FFFFFF]/30 group"
       >
         <MessageCircle className="w-6 h-6 fill-current group-hover:rotate-12 transition-transform" />
       </a>

@@ -99,6 +99,14 @@ export function HeroSection() {
           allowFullScreen
         ></iframe>
 
+        {/* Custom Poster Image */}
+        {!isPlaying && (
+          <div 
+            className="absolute inset-0 bg-cover bg-center z-[15]"
+            style={{ backgroundImage: `url('https://lh3.googleusercontent.com/d/1muCTQGNPNIhor73OdG68-Rlxnk6C6KqV')` }}
+          />
+        )}
+
         {/* Elegant Minimalist Overlay & Custom Controls */}
         <div
           onClick={togglePlay}
@@ -110,13 +118,13 @@ export function HeroSection() {
         >
           {!isPlaying ? (
             /* Custom minimalist Play button */
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-[#EFECE6]/40 bg-[#EFECE6]/10 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-[#EFECE6]/80 hover:bg-[#EFECE6]/25 shadow-lg">
-              <Play className="w-6 h-6 sm:w-8 sm:h-8 text-[#EFECE6] fill-[#EFECE6] translate-x-0.5" />
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-[#FDF5E6]/40 bg-[#FDF5E6]/10 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-[#FDF5E6]/80 hover:bg-[#FDF5E6]/25 shadow-lg">
+              <Play className="w-6 h-6 sm:w-8 sm:h-8 text-[#FDF5E6] fill-[#FDF5E6] translate-x-0.5" />
             </div>
           ) : (
             /* Subtle hover Pause button when video is playing */
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-[#EFECE6]/20 bg-black/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md">
-              <Pause className="w-6 h-6 sm:w-8 sm:h-8 text-[#EFECE6] fill-[#EFECE6]" />
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-[#FDF5E6]/20 bg-black/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md">
+              <Pause className="w-6 h-6 sm:w-8 sm:h-8 text-[#FDF5E6] fill-[#FDF5E6]" />
             </div>
           )}
         </div>

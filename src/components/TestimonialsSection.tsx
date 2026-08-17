@@ -3,7 +3,7 @@ import { TESTIMONIALS_DATA } from '../data';
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full py-10 sm:py-16 px-3 sm:px-6 flex flex-col items-center bg-[#EFECE6]">
+    <section className="w-full py-10 sm:py-16 px-3 sm:px-6 flex flex-col items-center bg-[#FDF5E6]">
       <div className="max-w-6xl w-full">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
@@ -12,7 +12,7 @@ export function TestimonialsSection() {
             <span>Resultados Reais</span>
           </div>
           <h2 className="font-serif-editorial text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#22281D] italic mb-2 sm:mb-4">
-            Alunas que já conquistaram os 5km
+            Veja a transformação de algumas mulheres que confiaram.
           </h2>
           <p className="font-sans-body text-xs sm:text-base text-[#686E5E] max-w-2xl mx-auto">
             Veja as transformações de quem confiou na metodologia e saiu do zero para a corrida.
@@ -28,7 +28,7 @@ export function TestimonialsSection() {
                   src={imgUrl}
                   alt={`Depoimento ${index + 1}`}
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto rounded-lg sm:rounded-xl object-contain bg-[#EFECE6]"
+                  className="w-full h-auto rounded-lg sm:rounded-xl object-contain bg-[#FDF5E6]"
                 />
               </div>
             </div>

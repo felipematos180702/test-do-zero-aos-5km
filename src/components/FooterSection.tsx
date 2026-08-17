@@ -7,13 +7,13 @@ export function FooterSection() {
   };
 
   return (
-    <footer className="w-full border-t border-[#DCD6CA] bg-[#EFECE6] py-10 px-4 sm:px-6 text-center text-[#686E5E]">
+    <footer className="w-full border-t border-[#DCD6CA] bg-[#FDF5E6] py-10 px-4 sm:px-6 text-center text-[#686E5E]">
       <div className="max-w-2xl mx-auto flex flex-col items-center gap-4">
         {/* Scroll To Top Button */}
         <button
           onClick={scrollToTop}
           title="Voltar ao topo"
-          className="p-2.5 rounded-full bg-[#FFFFFF] border border-[#DCD6CA] text-[#414A36] hover:bg-[#414A36] hover:text-[#EFECE6] transition-all duration-300 shadow-2xs group mb-2"
+          className="p-2.5 rounded-full bg-[#FFFFFF] border border-[#DCD6CA] text-[#414A36] hover:bg-[#414A36] hover:text-[#FDF5E6] transition-all duration-300 shadow-2xs group mb-2"
         >
           <ArrowUp className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
         </button>
