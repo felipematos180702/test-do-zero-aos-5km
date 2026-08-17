@@ -79,12 +79,12 @@ export function HeroSection({ isScrolled }: HeroSectionProps) {
   };
 
   return (
-    <section className="relative w-full pt-6 pb-12 md:pt-10 md:pb-16 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden min-h-[90vh]">
+    <section className="relative w-full pt-2 pb-12 md:pt-6 md:pb-16 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden min-h-[90vh]">
       {/* Subtle organic background accent glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#DED6CA]/50 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       {/* Hero Centered Logo */}
-      <div className="w-full flex items-center justify-center h-32 sm:h-48 md:h-56 mb-4 sm:mb-8 relative z-20">
+      <div className="w-full flex items-center justify-center h-24 sm:h-32 md:h-44 mb-2 sm:mb-4 relative z-20">
         <AnimatePresence>
           {!isScrolled && (
             <motion.img
