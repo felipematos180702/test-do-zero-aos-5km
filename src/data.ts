@@ -15,7 +15,7 @@ export const HERO_DATA = {
   fallbackPhotoUrl: priPortraitLocal,
   instagramHandle: "@timepricardoso",
   instagramUrl: "https://instagram.com/timepricardoso",
-  whatsappNumber: "5521969952261", // Editable default number
+  whatsappNumber: "5521987115636", // Editable default number
 };
 
 export const LINK_CARDS: LinkCard[] = [
@@ -49,7 +49,7 @@ export const LINK_CARDS: LinkCard[] = [
   {
     id: "planejamento",
     title: "Do zero aos cinco km (Sem Assessoria)",
-    description: "Planilha e estrutura detalhada de treinos para quem deseja evoluir e treinar no seu próprio ritmo e horários.",
+    description: "Planilha e estrutura detalhada de treinos para quem deseja evoluir e treinar no seu próprio ritmo e de forma mais autônoma.",
     ctaText: "Garantir Planilha",
     image: "https://lh3.googleusercontent.com/d/1muCTQGNPNIhor73OdG68-Rlxnk6C6KqV",
     fallbackImage: cardPlanImg,
@@ -117,16 +117,15 @@ export const FAQ_DATA: FAQItem[] = [
 ];
 
 export const TESTIMONIALS_DATA = [
-  "https://lh3.googleusercontent.com/d/1-0dcqsSjP4vKNWmy9gsJIQyLkMn-e8j4",
-  "https://lh3.googleusercontent.com/d/1LQlAWujA-77nTD3j9lLwUzSpTXa5APjZ",
-  "https://lh3.googleusercontent.com/d/1j2KZWtbJi1TnzwtOtlaX4lP8ma5q_caa",
   "https://lh3.googleusercontent.com/d/1kzoxrnvuiq0TIPkMEv4ozsTZ40ic5_Bj",
-  "https://lh3.googleusercontent.com/d/1l56IS2KUUPI-fpRghvvv_vNtZr2SYbNy",
   "https://lh3.googleusercontent.com/d/1216g94uk0NSwcUnM7PmgNzoT16f5AQWf",
   "https://lh3.googleusercontent.com/d/1OUUzLkqRBLbHCx7w_qGpazSGR7KGwl8h",
   "https://lh3.googleusercontent.com/d/1UalRu1LoJeD_qQZaR30bqWqG4T2phNTL",
   "https://lh3.googleusercontent.com/d/1eILULfNkXgebev3xVY8NToLzCIfNIW2l",
   "https://lh3.googleusercontent.com/d/1Bmm2NTORhMIuNcnmHeAlrFqEFOXdm8dI",
-  "https://lh3.googleusercontent.com/d/1m7xbI2UnCcq2rEIJFSOZnZgYyfRx85Sr",
-  "https://lh3.googleusercontent.com/d/1wCqag63DQiWF0En6KPCw1ijYOHQV5qD9"
+  "https://lh3.googleusercontent.com/d/14gBRgMe8f5iXARjyZWO75LwlJSBwLcMk",
+  "https://lh3.googleusercontent.com/d/1wCqag63DQiWF0En6KPCw1ijYOHQV5qD9",
+  "https://lh3.googleusercontent.com/d/1HbiB5vxGwXutX7wnz1F4RW5DMA9j3F3g",
+  "https://lh3.googleusercontent.com/d/1FELCrJk_BscQl-IC5ZXIvtmZRz6Vb6gx",
+  "https://lh3.googleusercontent.com/d/1V4S8KRdrD9YN3lX5F9BtTmiKx-6uv8RL"
 ];
