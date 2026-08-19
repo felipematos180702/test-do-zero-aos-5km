@@ -33,10 +33,17 @@ export function AboutSection() {
 
         {/* Content Column */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          {/* Section Badge */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#545E48]/80 text-[#FDF5E6] text-[11px] sm:text-xs font-semibold uppercase tracking-widest px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full mb-4 sm:mb-6 border border-[#636E56]/60">
-            <Heart className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#D8D2C5]" />
-            <span>Comunidade & Propósito</span>
+          {/* Section Badges */}
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-[#545E48]/80 text-[#FDF5E6] text-[11px] sm:text-xs font-semibold uppercase tracking-widest px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-[#636E56]/60">
+              <Heart className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#D8D2C5]" />
+              <span>Comunidade & Propósito</span>
+            </div>
+            {ABOUT_DATA.cref && (
+              <div className="inline-flex items-center bg-[#353C2C] text-[#D8D2C5] text-[11px] sm:text-xs font-mono px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-[#525B46]">
+                <span>{ABOUT_DATA.cref}</span>
+              </div>
+            )}
           </div>
 
           {/* Title */}

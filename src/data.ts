@@ -74,6 +74,7 @@ export const LINK_CARDS: LinkCard[] = [
 export const ABOUT_DATA = {
   title: "Sobre Mim & O Time",
   image: "https://lh3.googleusercontent.com/d/19xvGZtcFwSmK8pPvojo-N_bdoCWLaJu5",
+  cref: "CREF: 032128-G/RJ",
   paragraphs: [
     "Acredito que a corrida é um mecanismo poderoso de reconexão com nós mesmas. Em meio a tantas funções, responsabilidades e uma rotina que muitas vezes nos engole, é fácil deixarmos o nosso próprio cuidado para depois.",
     "Foi também vivendo essa realidade que nasceu o Time Pri Cardoso. Como mulher, mãe e alguém que concilia diferentes funções todos os dias, conheço muitos dos desafios das mulheres que chegam até mim, e acredito que a corrida pode ser um caminho possível para começarmos a mudar essa dinâmica.",
